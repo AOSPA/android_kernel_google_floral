@@ -553,7 +553,6 @@ gen_headers_out_arm = [
     "linux/synclink.h",
     "linux/sysctl.h",
     "linux/sysinfo.h",
-    "linux/sysstats.h",
     "linux/target_core_user.h",
     "linux/taskstats.h",
     "linux/tcp.h",
@@ -970,6 +969,28 @@ gen_headers_out_arm = [
     "asm/swab.h",
     "asm/types.h",
     "asm/unistd.h",
+
+    // Addions missing kernel headers
+
+    "linux/ipu.h",
+    "linux/abc-pcie-dma.h",
+    "linux/f2fs.h",
+    "linux/mfd/adnc/iaxxx-systemids.h",
+    "linux/mfd/adnc/iaxxx-tunnel-intf.h",
+    "linux/mfd/adnc/iaxxx-odsp.h",
+    "linux/ab-sm.h",
+    "linux/ab-dram.h",
+    "linux/mfd/adnc/iaxxx-sensor-tunnel.h",
+    "linux/faceauth_shared.h",
+    "input/touch_offload.h",
+    "linux/st54j_se.h",
+    "linux/faceauth.h",
+    "linux/mfd/adnc/iaxxx-system-identifiers.h",
+    "linux/mfd/adnc/iaxxx-module.h",
+    "linux/ncsi.h",
+    "linux/mfd/adnc/iaxxx-sysid-defs.h",
+    "linux/mfd/adnc/iaxxx-debug-intf.h",
+    "linux/citadel.h",
 ]
 
 genrule {
